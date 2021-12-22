@@ -1,0 +1,32 @@
+package programing;
+
+
+import java.util.LinkedList;
+
+public class ObjectInList {
+public static void main(String[] args) {
+	   LinkedList<String> lst= new LinkedList<String>();
+	
+	
+	        lst.add("apple");
+			lst.add("banana");
+			lst.add("pappaya");
+			lst.add("watermelon");
+			lst.add("guva");
+			lst.add("grapes");
+			System.out.println("element of the linkedlist"+lst);
+			lst.addFirst("orange");
+			System.out.println("element of the linkedlist"+lst);
+			lst .addLast("pineapple");
+			System.out.println("list of the  elements"+lst);
+			Object fst= lst.get(0);
+			System.out.println("firstelement"+fst);
+			lst.set(0, "lemon");
+			System.out.println("the value of the value"+lst);
+			lst.remove("guva");
+		    lst.clear();
+			System.out.println("subcrice :"+lst);
+}     
+
+}
+

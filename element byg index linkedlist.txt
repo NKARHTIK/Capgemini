@@ -1,0 +1,30 @@
+package programing;
+
+import java.util.LinkedList;
+
+public class GetElementByIndex {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//creat an object for linked list
+		LinkedList<String> lst=new LinkedList<String>();
+		
+		lst.add("AA");
+		lst.add("BB");
+		lst.add("CC");
+		lst.add("DD");
+		lst.add("EE");
+		System.out.println("LinkedList Element :");
+		
+		for(int i=0;i<lst.size();i++)
+		{
+			
+			System.out.println("lst  : "+lst.get(i));
+		}
+                  int firstindex =lst.indexOf("BB");
+		
+		System.out.println("first index "+firstindex);
+		
+		
+		}
+}

@@ -1,0 +1,59 @@
+package specialjavapackage;
+enum day{
+	SUNDAY,
+	MONDAY,
+	TUESDAY,WEDNESDAY,THRUSDAY,FRIDAY,SATURDAY;
+	
+}
+
+public class JavaEnumspl {
+	day Day;//Enum object
+	
+	
+	//constructor
+	public JavaEnumspl(day Day) {
+		this.Day=Day;
+		
+	}
+	public JavaEnumspl() {
+		// TODO Auto-generated constructor stub
+	
+	// creating a method to check the condition
+	public void dayIsLike() {
+		
+		switch(Day) {
+		case MONDAY:
+			System.out.println("mondays are bad");
+		     break;
+		case TUESDAY:
+			System.out.println("TUESDAY are BETTER");
+		     break;
+		case WEDNESDAY:
+			System.out.println("WEDNESDAY are FUN");
+		     break;
+		case THRUSDAY:
+			System.out.println("THRUSDAY are BEST");
+		     break;
+		case FRIDAY:
+		    System.out.println("FRIDAY are OKOK");
+		     break;
+		case SATURDAY:
+			System.out.println("SATURDAY are ");
+		     break;
+		 default:
+		    	 System.out.println("mid day are ok---oki");
+		}
+		
+	}
+	}
+	public static void main(String[] args) {
+	    String AA="MONDAY";
+	    JavaEnumspl kk=new JavaEnumspl();
+	    kk.dayIsLike();
+		
+		
+		
+
+	}
+
+}

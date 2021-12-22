@@ -1,0 +1,38 @@
+package programing;
+
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
+
+public class SubListFromLinkedList {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//linked list in sub list
+		LinkedList<String> kar= new LinkedList<String>();
+		kar.add("Rice");
+		kar.add("oil");
+		kar.add("deal");
+		kar.add("soap");
+		kar.add("shampoo");
+		kar.add("salt");
+		kar.add("sugar");
+		System.out.println("number of items"+kar);
+		//loop iteration process
+		Iterator<String> iter=kar.iterator();
+		while(iter.hasNext()) {
+			
+			
+			System.out.println(iter.next());
+		}
+		//obtaining sublist from the linked list(kar)
+		List sublist=kar.subList(4, 7);
+		System.out.println(sublist);
+		
+		
+		
+		
+
+	}
+
+}

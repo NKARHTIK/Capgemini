@@ -1,0 +1,70 @@
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
+import java.util.TreeMap;
+
+public class HashMapcollection {
+	public static void main(String[] args) {
+		
+		HashMap<Integer,String> hmap=new HashMap<Integer,String>();
+		hmap.put(10, "kk");
+		hmap.put(1, "kk");
+		hmap.put(4, "AA");
+		hmap.put(2, "cc");
+		hmap.put(3, "VV");
+		hmap.put(5, "DD");
+		System.out.println(hmap);
+		System.out.println(hmap.size());
+		System.out.println(hmap.remove(10));
+		for(int i=1;i<=hmap.size();i++) {
+		System.out.println("values of index "+hmap.get(i));
+		}
+		System.out.println(hmap);
+		hmap.clear();
+		System.out.println(hmap);
+	
+	
+		//creat Hmap
+		HashMap<Integer,String> Hmap=new HashMap<Integer,String>();
+		Hmap.put(6, "sachin");
+		Hmap.put(1, "karthik");
+		Hmap.put(4, "prakesh");
+		Hmap.put(2, "teja");
+		Hmap.put(3, "zaheer");
+		Hmap.put(5, "akash");
+		System.out.println("before sorting .....");
+		Set setmethod =Hmap.entrySet();
+		Iterator itr =setmethod.iterator();
+		while(itr.hasNext())
+		{
+			
+			//obiect to different the keys and values
+			Map.Entry me=(Map.Entry)itr.next();
+			System.out.println(me.getKey());
+			System.out.println(me.getValue());
+			
+			
+		}
+		System.out.println("sorting the HashMap :");
+			
+	  Map<Integer,String> map=new TreeMap<Integer,String>(Hmap);
+			
+	  Set setmet =map.entrySet();
+		Iterator itra =setmet.iterator();
+		while(itra.hasNext())
+		{
+			
+			//obiect to different the keys and values
+			Map.Entry me=(Map.Entry)itra.next();
+			System.out.println(me.getKey());
+			System.out.println(me.getValue());
+			
+			
+		}
+		
+		System.out.println("after rotating");
+	}
+
+}
